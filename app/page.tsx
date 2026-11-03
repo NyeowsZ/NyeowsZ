@@ -2,10 +2,8 @@
 
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
-import SocialRail from "@/components/SocialRail";
 import HeroSection from "@/components/HeroSection";
 import FeaturedProjectSection from "@/components/FeaturedProjectSection";
-import SkillsSection from "@/components/SkillsSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -16,31 +14,25 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen flex flex-col bg-white text-slate-900 bg-dot-grid selection:bg-blue-100 selection:text-blue-700">
-      {/* Top sticky navigation bar */}
+      {/* Clean Navbar matching mywant.png */}
       <Navbar onOpenResume={() => setIsResumeOpen(true)} />
 
-      {/* Fixed left social rail on desktop */}
-      <SocialRail />
-
-      {/* Main Page Sections */}
+      {/* Main Content */}
       <main className="flex-1 w-full">
-        {/* Hero Section */}
+        {/* Centered Hero from mywant.png */}
         <HeroSection />
 
-        {/* Featured Project Showcase */}
+        {/* Minimalist Featured Project: ParcelHub */}
         <FeaturedProjectSection />
 
-        {/* Technical Skills Grid */}
-        <SkillsSection />
-
-        {/* About Me & Background */}
+        {/* Clean About & Real Tech Stack */}
         <AboutSection />
 
-        {/* Contact & Inquiry Section */}
+        {/* Focused Contact Section */}
         <ContactSection />
       </main>
 
-      {/* Footer */}
+      {/* Discreet Footer */}
       <Footer />
 
       {/* Resume Modal */}

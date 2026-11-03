@@ -1,28 +1,12 @@
 export interface ProjectItem {
   id: string;
   title: string;
-  subtitle?: string;
-  tags: string[];
+  tagline: string;
   description: string;
+  tags: string[];
   githubUrl: string;
   liveUrl?: string;
-  placeId?: string;
-  stats?: {
-    heartbeat: string;
-    condition: string;
-  };
-  servers?: Array<{
-    id: string;
-    name: string;
-    teleportCode: string;
-    players: string;
-    ping: string;
-  }>;
-}
-
-export interface SkillCategory {
-  category: string;
-  skills: Array<{ name: string; level?: string; icon?: string }>;
+  highlights: string[];
 }
 
 export const PROFILE = {
@@ -31,106 +15,52 @@ export const PROFILE = {
   lastName: "Dumaguit",
   handle: "NyeowZ",
   title: "Software Developer",
-  roleSubtitle: "Aspiring Full-Stack & Software Developer",
   email: "johnvincekeyedu@gmail.com",
   githubUrl: "https://github.com/nyeowsz",
-  linkedinUrl: "https://linkedin.com/in/",
-  twitterUrl: "https://x.com/",
-  discordTag: "nyeowz",
-  bio: "BSIT student and developer passionate about creating responsive web applications, efficient backend REST APIs, game telemetry systems, and practical automation tools.",
-  slogan: "Good software solves problems, is usable, and stays simple.",
-  
-  terminal: {
-    user: "nyeowz",
-    machine: "portfolio.terminal",
-    shell: "zsh",
-    whoami: "NyeowZ — Software Developer & BSIT",
-    focus: "Web Systems • REST APIs • Automation",
-    coreStack: "C, Java, Luau, JS, TypeScript, Node.js, PHP, MySQL, Next.js",
-    status: "Active & Available for Opportunities",
+  slogan: {
+    line1: "Good software",
+    line2: "solves problems, is usable",
+    line3: "and stay simple",
   },
+  bio: "Software developer with a strong focus on clean architecture, full-stack web applications, and backend systems. Experienced with TypeScript, Next.js, Laravel, Docker, and scalable APIs.",
 
   featuredProject: {
-    id: "game-server-tracker",
-    title: "Automated Game Server Tracker & Discord Dispatcher",
-    tags: ["Node.js", "JavaScript", "Luau", "Roblox API", "Discord Webhooks", "Render"],
+    id: "parcelhub",
+    title: "ParcelHub",
+    tagline: "AI-Augmented Parcel Escrow & Visual Logging System",
     description:
-      'An automated background worker that polls the Roblox REST API to monitor low-population game servers for "Steal an Egg" (Place ID: 10777807077162), prioritizes them by lowest ping, and dispatches in-place live telemetry updates to Discord with instant one-click auto-join teleport links.',
+      "A parcel escrow platform that transitions synchronous last-mile deliveries into a secure, asynchronous workflow. Built for workplace staff and communities who cannot personally wait for delivery couriers, designating a centralized human-in-the-loop receiving hub.",
+    tags: [
+      "Next.js",
+      "React Native",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Computer Vision AI",
+      "Tailwind CSS",
+      "Vercel",
+    ],
     githubUrl: "https://github.com/nyeowsz",
-    placeId: "10777807077162",
-    gameName: "Steal an Egg",
-    stats: {
-      heartbeat: "17s ago",
-      condition: "≤ 4 players (ping sorted)",
-    },
-    servers: [
-      {
-        id: "1",
-        name: "Server #1",
-        teleportCode: "TeleportToPlaceInstance(10777807077162, ...)",
-        players: "1/7 Players",
-        ping: "3ms",
-      },
-      {
-        id: "2",
-        name: "Server #2",
-        teleportCode: "TeleportToPlaceInstance(10777807077162, ...)",
-        players: "1/7 Players",
-        ping: "12ms",
-      },
-      {
-        id: "3",
-        name: "Server #3",
-        teleportCode: "TeleportToPlaceInstance(10777807077162, ...)",
-        players: "1/7 Players",
-        ping: "15ms",
-      },
+    highlights: [
+      "Asynchronous Proxy Receiving: Pre-registration of inbound orders with receipt verification, eliminating missed courier drops.",
+      "AI Visual Documentation: Computer vision inspection during physical handover to verify condition and maintain an audit trail.",
+      "Dual-Factor Claiming: Secure release via personal MPIN and dynamic time-based QR codes.",
+      "Full-Stack Cross-Platform: Next.js management portal, React Native client apps, and Supabase real-time backend.",
     ],
   },
 
-  skills: [
+  techStack: [
     {
-      category: "Languages & Core",
-      skills: [
-        { name: "TypeScript" },
-        { name: "JavaScript" },
-        { name: "Luau / Lua" },
-        { name: "C" },
-        { name: "Java" },
-        { name: "PHP" },
-        { name: "SQL" },
-      ],
+      category: "Frontend & Mobile",
+      items: ["Next.js", "React", "React Native", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5 & CSS3"],
     },
     {
-      category: "Frameworks & Frontend",
-      skills: [
-        { name: "Next.js" },
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "HTML5 / CSS3" },
-        { name: "Responsive UI" },
-      ],
+      category: "Backend & Architecture",
+      items: ["Laravel", "PHP", "REST APIs", "RPC", "Supabase", "PostgreSQL", "SQL & NoSQL"],
     },
     {
-      category: "Backend & Systems",
-      skills: [
-        { name: "Node.js" },
-        { name: "RESTful APIs" },
-        { name: "Discord Webhooks" },
-        { name: "Roblox Open Cloud API" },
-        { name: "MySQL" },
-      ],
-    },
-    {
-      category: "Tools & Workflow",
-      skills: [
-        { name: "Git & GitHub" },
-        { name: "Render Cloud" },
-        { name: "VS Code" },
-        { name: "Postman" },
-        { name: "Linux / Zsh" },
-      ],
+      category: "DevOps & Infrastructure",
+      items: ["Docker CLI", "Linux / Ubuntu", "Nginx", "Vercel", "Git & GitHub"],
     },
   ],
 };
-

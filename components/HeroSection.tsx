@@ -11,26 +11,6 @@ export default function HeroSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[350px] bg-blue-100/35 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-3xl mx-auto flex flex-col items-center space-y-7 sm:space-y-9">
-        
-        {/* Subtle greeting indicator badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-slate-200/80 text-slate-700 text-xs font-mono shadow-xs backdrop-blur-xs transition-all hover:border-blue-300">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-          </span>
-          <span>Available for work</span>
-          <span className="text-slate-300">•</span>
-          <a
-            href={PROFILE.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center gap-1 transition-colors"
-          >
-            <span>@{PROFILE.handle}</span>
-            <ArrowUpRight className="w-2.5 h-2.5" />
-          </a>
-        </div>
-
         {/* Hero Title: "Hi! I'm John Vince Key Dumaguit" */}
         <div className="space-y-3">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
@@ -42,17 +22,20 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl font-medium text-slate-600 max-w-xl mx-auto">
-            {PROFILE.title} specializing in responsive web applications, robust backend architectures, and developer tooling.
+            {PROFILE.title} specializing in responsive web applications, robust
+            backend architectures, and developer tooling.
           </p>
         </div>
 
         {/* Hybrid Slogan Card: Quote from mywant.png as the description */}
-        <div className="w-full max-w-2xl p-5 sm:p-6 rounded-2xl bg-white/90 border border-slate-200/90 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:border-blue-200 text-center">
+        <div className="w-full max-w-2xl p-5 sm:p-6 rounded-2xl bg-white/90 backdrop-blur-sm transition-all duration-300 text-center">
           <p className="text-base sm:text-lg md:text-xl font-normal text-slate-700 leading-relaxed">
             &ldquo;Good software{" "}
-            <span className="font-semibold text-blue-600">solves problems</span>,{" "}
-            <span className="font-semibold text-blue-600">is usable</span>, and{" "}
-            <span className="font-semibold text-blue-600">stays simple</span>.&rdquo;
+            <span className="font-semibold text-blue-600">solves problems</span>
+            , <span className="font-semibold text-blue-600">is usable</span>,
+            and{" "}
+            <span className="font-semibold text-blue-600">stays simple</span>
+            .&rdquo;
           </p>
         </div>
 
@@ -74,7 +57,6 @@ export default function HeroSection() {
             <span>Get to know me</span>
           </a>
         </div>
-
       </div>
     </section>
   );

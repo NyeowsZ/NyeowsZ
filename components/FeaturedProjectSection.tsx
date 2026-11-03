@@ -10,7 +10,6 @@ export default function FeaturedProjectSection() {
   return (
     <section id="projects" className="py-20 sm:py-28 scroll-mt-20">
       <div className="max-w-5xl mx-auto px-6 sm:px-8">
-        
         {/* Section Header */}
         <div className="mb-10 text-left">
           <span className="font-mono text-xs font-semibold uppercase tracking-wider text-blue-600 block mb-1">
@@ -23,12 +22,14 @@ export default function FeaturedProjectSection() {
 
         {/* Minimalist Card for ParcelHub */}
         <div className="rounded-3xl border border-slate-200/90 bg-white shadow-sm hover:shadow-md hover:border-blue-200 transition-all p-7 sm:p-10 space-y-7">
-          
           {/* Top Header of Card */}
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-slate-100 pb-6">
             <div className="space-y-1">
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                 {project.title}
+                <span className="text-blue-600 text-sm px-1 font-normal">
+                  (Under Development)
+                </span>
               </h3>
               <p className="text-sm sm:text-base font-medium text-blue-600">
                 {project.tagline}
@@ -92,9 +93,7 @@ export default function FeaturedProjectSection() {
               </span>
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );

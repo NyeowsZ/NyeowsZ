@@ -16,7 +16,7 @@ export default function HeroSection() {
             solves problems, is usable
           </h2>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-normal text-slate-800 tracking-tight leading-[1.25]">
-            and <span className="font-semibold text-blue-600">stay simple</span>
+            and <span className="font-semibold text-blue-600">simple</span>
           </h2>
         </div>
 

@@ -142,12 +142,13 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           </a>
 
           {/* Dark pill Resume button */}
-          <button
-            onClick={onOpenResume}
-            className="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-4 py-2 rounded-lg shadow-2xs hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+          <a
+            href="/Dumaguit%20Resume.pdf"
+            download="Dumaguit Resume.pdf"
+            className="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-4 py-2 rounded-lg shadow-2xs hover:shadow transition-all duration-200 hover:-translate-y-0.5 cursor-pointer inline-flex items-center justify-center"
           >
             Resume
-          </button>
+          </a>
         </nav>
 
         {/* Mobile menu trigger button */}
@@ -215,15 +216,14 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
               <Github className="w-3.5 h-3.5" />
               <span>github.com/{PROFILE.handle}</span>
             </a>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                if (onOpenResume) onOpenResume();
-              }}
-              className="py-2 px-4 rounded-lg bg-slate-900 text-white text-xs font-medium"
+            <a
+              href="/Dumaguit%20Resume.pdf"
+              download="Dumaguit Resume.pdf"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2 px-4 rounded-lg bg-slate-900 text-white text-xs font-medium inline-flex items-center justify-center"
             >
               Resume
-            </button>
+            </a>
           </div>
         </div>
       )}

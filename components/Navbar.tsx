@@ -2,7 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import { PROFILE } from "@/data/profile";
-import { Menu, X, Github, Mail, Copy, Check, ArrowUpRight } from "@/components/Icons";
+import {
+  Menu,
+  X,
+  Github,
+  Mail,
+  Copy,
+  Check,
+  ArrowUpRight,
+} from "@/components/Icons";
 
 interface NavbarProps {
   onOpenResume?: () => void;
@@ -43,10 +51,8 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between gap-4">
-        
         {/* Left Section: Smooth "scroll down" ticker/slot animation container */}
         <div className="relative h-12 w-[240px] sm:w-[260px] overflow-hidden flex items-center">
-          
           {/* Top State: @nyeowsz handle pill (rolls down and exits bottom on scroll) */}
           <div
             className={`absolute left-0 inset-y-0 flex items-center transition-all duration-500 cubic-bezier(0.16, 1, 0.3, 1) transform ${
@@ -59,10 +65,9 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
               href={PROFILE.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-50 hover:bg-blue-50 border border-slate-200/80 hover:border-blue-200 text-xs sm:text-sm font-mono font-medium text-slate-700 hover:text-blue-600 transition-colors group"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:bg-blue-50 hover:border-blue-200 text-xs sm:text-sm font-mono font-medium text-slate-700 hover:text-blue-600 transition-colors group"
             >
-              <Github className="w-3.5 h-3.5 text-slate-500 group-hover:text-blue-600 transition-colors" />
-              <span>@{PROFILE.handle}</span>
+              <span>github.com/{PROFILE.handle}</span>
               <ArrowUpRight className="w-3 h-3 text-slate-400 group-hover:text-blue-500 transition-colors" />
             </a>
           </div>
@@ -94,7 +99,6 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
               <ArrowUpRight className="w-2.5 h-2.5 text-slate-400" />
             </a>
           </div>
-
         </div>
 
         {/* Middle Section: Direct copyable Email pill */}
@@ -102,9 +106,8 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           <button
             onClick={handleCopyEmail}
             title="Click to copy email"
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-50/80 hover:bg-blue-50/80 border border-slate-200/80 hover:border-blue-200 text-xs font-mono text-slate-600 hover:text-blue-700 transition-all duration-200 cursor-pointer shadow-2xs group"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full hover:bg-blue-50/80 hover:border-blue-200 text-xs font-mono text-slate-600 hover:text-blue-700 transition-all duration-200 cursor-pointer group"
           >
-            <Mail className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-600 transition-colors" />
             <span>{PROFILE.email}</span>
             {copied ? (
               <span className="inline-flex items-center gap-1 text-emerald-600 font-semibold pl-1">
@@ -154,7 +157,11 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             className="p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
           </button>
         </div>
       </div>

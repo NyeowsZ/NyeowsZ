@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Container for high contrast across dark and light browser tabs -->
+  <rect width="64" height="64" rx="14" fill="#0F172A" />
+
+  <!-- Angled electric blue parallelogram dot for 'j' -->
+  <polygon points="17,11 26,11 22,21 13,21" fill="#2563EB" />
+
+  <!-- 'j' Glyph -->
+  <path d="M 18.5 24 L 27 24 L 27 43.5 C 27 49 23.5 53 16.5 53 C 11.5 53 8.5 50.5 8.5 46.5 L 16.8 46.5 C 16.8 47.8 18 48.3 19.8 48.3 C 21.4 48.3 22.2 47.2 22.2 44.5 L 22.2 24 Z" fill="#FFFFFF" />
+
+  <!-- 'v' Glyph -->
+  <polygon points="29,24 36.8,24 43.5,43 50.2,24 58,24 47.6,53 39.4,53" fill="#FFFFFF" />
+</svg>

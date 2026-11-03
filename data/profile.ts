@@ -13,7 +13,7 @@ export const PROFILE = {
   fullName: "John Vince Key Dumaguit",
   firstNameParts: "John Vince Key",
   lastName: "Dumaguit",
-  handle: "NyeowZ",
+  handle: "NyeowsZ",
   title: "Software Developer",
   email: "johnvincekeyedu@gmail.com",
   githubUrl: "https://github.com/nyeowsz",
@@ -40,7 +40,7 @@ export const PROFILE = {
       "Tailwind CSS",
       "Vercel",
     ],
-    githubUrl: "https://github.com/nyeowsz",
+    githubUrl: "https://github.com/spadeontop/parcelhub",
     highlights: [
       "Asynchronous Proxy Receiving: Pre-registration of inbound orders with receipt verification, eliminating missed courier drops.",
       "AI Visual Documentation: Computer vision inspection during physical handover to verify condition and maintain an audit trail.",
@@ -52,15 +52,37 @@ export const PROFILE = {
   techStack: [
     {
       category: "Frontend & Mobile",
-      items: ["Next.js", "React", "React Native", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5 & CSS3"],
+      items: [
+        "Next.js",
+        "React",
+        "React Native",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML5 & CSS3",
+      ],
     },
     {
       category: "Backend & Architecture",
-      items: ["Laravel", "PHP", "REST APIs", "RPC", "Supabase", "PostgreSQL", "SQL & NoSQL"],
+      items: [
+        "Laravel",
+        "PHP",
+        "REST APIs",
+        "RPC",
+        "Supabase",
+        "PostgreSQL",
+        "SQL & NoSQL",
+      ],
     },
     {
       category: "DevOps & Infrastructure",
-      items: ["Docker CLI", "Linux / Ubuntu", "Nginx", "Vercel", "Git & GitHub"],
+      items: [
+        "Docker CLI",
+        "Linux / Ubuntu",
+        "Nginx",
+        "Vercel",
+        "Git & GitHub",
+      ],
     },
   ],
 };

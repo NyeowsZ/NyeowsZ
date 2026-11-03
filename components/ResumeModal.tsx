@@ -54,9 +54,27 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <GraduationCap className="w-4 h-4" />
               <span>Education</span>
             </h3>
-            <p className="font-semibold text-slate-800">
-              Bachelor of Science in Information Technology (BSIT)
-            </p>
+            <div className="flex items-start justify-between gap-2">
+              <div>
+                <p className="font-semibold text-slate-900">
+                  {PROFILE.education.degree}
+                </p>
+                <p className="text-xs text-slate-600 font-medium">
+                  {PROFILE.education.institution}
+                </p>
+                <p className="text-[11px] text-slate-500">
+                  {PROFILE.education.location}
+                </p>
+              </div>
+              <div className="text-right shrink-0">
+                <span className="text-xs font-mono text-slate-500 block">
+                  {PROFILE.education.period}
+                </span>
+                <span className="inline-block text-[10px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200 mt-1">
+                  {PROFILE.education.status}
+                </span>
+              </div>
+            </div>
           </div>
 
           {/* Skills */}

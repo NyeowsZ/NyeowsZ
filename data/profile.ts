@@ -85,4 +85,13 @@ export const PROFILE = {
       ],
     },
   ],
+
+  education: {
+    institution: "Cebu Technological University - Danao Campus",
+    location: "Sabang, Danao City, Cebu 6004",
+    degree: "Bachelor of Science in Information Technology (BSIT)",
+    status: "4th Year Undergraduate",
+    period: "2023 – Present",
+    logo: "/ctu-logo.png",
+  },
 };

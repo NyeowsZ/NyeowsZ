@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/Status-Available%20for%20Opportunities-success?style=flat-square" alt="Status" />
 </p>
 
-> *“Good software solves problems, is usable, and stays simple.”*
+> _“Good software solves problems, is usable, and stays simple.”_
 
 ---
 
@@ -71,7 +71,7 @@ ParcelHub transitions traditional, synchronous last-mile deliveries into a secur
 
 - **Email:** [johnvincekeyedu@gmail.com](mailto:johnvincekeyedu@gmail.com)
 - **GitHub:** [@nyeowsz](https://github.com/nyeowsz)
-- **Portfolio:** *Live at this repository*
+- **Portfolio:** [My Portfolio](https://nyeowsz.vercel.app)
 
 ---
 

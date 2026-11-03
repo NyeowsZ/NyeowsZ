@@ -7,7 +7,6 @@ import FeaturedProjectSection from "@/components/FeaturedProjectSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import ResumeModal from "@/components/ResumeModal";
 
 export default function Home() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -34,12 +33,6 @@ export default function Home() {
 
       {/* Discreet Footer */}
       <Footer />
-
-      {/* Resume Modal */}
-      <ResumeModal
-        isOpen={isResumeOpen}
-        onClose={() => setIsResumeOpen(false)}
-      />
     </div>
   );
 }

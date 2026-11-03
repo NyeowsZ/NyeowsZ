@@ -13,7 +13,7 @@ export const PROFILE = {
   fullName: "John Vince Key Dumaguit",
   firstNameParts: "John Vince Key",
   lastName: "Dumaguit",
-  handle: "NyeowsZ",
+  handle: "nyeowsz",
   title: "Software Developer",
   email: "johnvincekeyedu@gmail.com",
   githubUrl: "https://github.com/nyeowsz",

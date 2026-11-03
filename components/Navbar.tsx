@@ -2,7 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import { PROFILE } from "@/data/profile";
-import { Menu, X, Github, Mail, Copy, Check, ArrowUpRight } from "@/components/Icons";
+import {
+  Menu,
+  X,
+  Github,
+  Mail,
+  Copy,
+  Check,
+  ArrowUpRight,
+} from "@/components/Icons";
 
 interface NavbarProps {
   onOpenResume?: () => void;
@@ -43,7 +51,6 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between gap-4">
-        
         {/* Left Section: Changes based on scroll position */}
         <div className="flex items-center min-w-[200px]">
           {!scrolled ? (
@@ -52,7 +59,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
               href={PROFILE.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-50 hover:bg-blue-50 border border-slate-200/80 hover:border-blue-200 text-xs sm:text-sm font-mono font-medium text-slate-700 hover:text-blue-600 transition-all duration-300 group"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:bg-blue-50 hover:border-blue-200 text-xs sm:text-sm font-mono font-medium text-slate-700 hover:text-blue-600 transition-all duration-300 group"
             >
               <Github className="w-3.5 h-3.5 text-slate-500 group-hover:text-blue-600 transition-colors" />
               <span>@{PROFILE.handle}</span>
@@ -61,7 +68,10 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           ) : (
             /* On scroll bottom: show name + github.com/nyeowsz below */
             <div className="flex flex-col group animate-in fade-in duration-300">
-              <a href="#" className="text-base sm:text-lg font-bold tracking-tight leading-tight">
+              <a
+                href="#"
+                className="text-base sm:text-lg font-bold tracking-tight leading-tight"
+              >
                 <span className="text-blue-600 transition-colors group-hover:text-blue-700">
                   {PROFILE.firstNameParts}
                 </span>{" "}
@@ -85,9 +95,8 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           <button
             onClick={handleCopyEmail}
             title="Click to copy email"
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-50/80 hover:bg-blue-50/80 border border-slate-200/80 hover:border-blue-200 text-xs font-mono text-slate-600 hover:text-blue-700 transition-all duration-200 cursor-pointer shadow-2xs group"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full hover:bg-blue-50/80 hover:border-blue-200 text-xs font-mono text-slate-600 hover:text-blue-700 transition-all duration-200 cursor-pointer group"
           >
-            <Mail className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-600 transition-colors" />
             <span>{PROFILE.email}</span>
             {copied ? (
               <span className="inline-flex items-center gap-1 text-emerald-600 font-semibold pl-1">
@@ -137,7 +146,11 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             className="p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
           </button>
         </div>
       </div>

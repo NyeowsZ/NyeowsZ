@@ -7,15 +7,6 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[72vh] flex flex-col items-center justify-center text-center px-6 py-24 sm:py-32">
       <div className="max-w-3xl mx-auto flex flex-col items-center space-y-8 sm:space-y-10">
-        
-        {/* Subtle greeting indicator */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200/70 text-slate-600 text-xs font-mono">
-          <span className="w-2 h-2 rounded-full bg-blue-600" />
-          <span>Available for work</span>
-          <span className="text-slate-300">•</span>
-          <span className="text-blue-600 font-semibold">@{PROFILE.handle}</span>
-        </div>
-
         {/* The Exact Headline Typography from mywant.png */}
         <div className="space-y-1.5 sm:space-y-2">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-normal text-slate-800 tracking-tight leading-[1.25]">
@@ -45,7 +36,6 @@ export default function HeroSection() {
             Get to know me
           </a>
         </div>
-
       </div>
     </section>
   );
